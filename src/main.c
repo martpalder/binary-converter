@@ -2,7 +2,7 @@
 #include <string.h>
 #include <stdlib.h>
 
-int askNumber();
+unsigned int askNumber();
 void printBinary(unsigned short);
 _Bool askQuit();
 
@@ -26,7 +26,7 @@ int main(void) {
 	return 0;
 }
 
-unsigned short askNumber()
+unsigned int askNumber()
 {
 	unsigned short num;
 	printf("\nEnter a number: ");
