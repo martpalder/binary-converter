@@ -3,12 +3,12 @@
 #include <stdlib.h>
 
 unsigned int askNumber();
-void printBinary(unsigned short);
+void printBinary(unsigned int);
 _Bool askQuit();
 
 int main(void) {
 	// variables
-	unsigned short num;
+	unsigned int num;
 	_Bool quit;
 	
 	while (1) {
@@ -28,16 +28,16 @@ int main(void) {
 
 unsigned int askNumber()
 {
-	unsigned short num;
+	unsigned int num;
 	printf("\nEnter a number: ");
 	scanf("%u", &num);
 	
 	return num;
 }
 
-void printBinary(unsigned short num)
+void printBinary(unsigned int num)
 {
-	char binary[sizeof(short) * 4 + 1];
+	char binary[sizeof(int) * 4 + 1];
 	puts("\nBinary:");
 	itoa(num, binary, 2);
 	puts(binary);
